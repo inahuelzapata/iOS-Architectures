@@ -29,18 +29,32 @@ class RequestManager: Requestable, HttpRequestHandler {
     }
 
     func get(endpoint: String, params: [String: Any], headers: [String: String]) -> Task<Any> {
-        return self.request(endpoint, parameters: params, headers: headers)
+        return self.request(urlPath + endpoint,
+                            parameters: params,
+                            headers: headers)
     }
 
     func post(endpoint: String, params: [String: Any], headers: [String: String]) -> Task<Any> {
-        return self.request(endpoint, method: .post, parameters: params, encoding: defaultEncoding, headers: headers)
+        return self.request(urlPath + endpoint,
+                            method: .post,
+                            parameters: params,
+                            encoding: defaultEncoding,
+                            headers: headers)
     }
 
     func put(endpoint: String, params: [String: Any], headers: [String: String]) -> Task<Any> {
-        return self.request(endpoint, method: .put, parameters: params, encoding: defaultEncoding, headers: headers)
+        return self.request(urlPath + endpoint,
+                            method: .put,
+                            parameters: params,
+                            encoding: defaultEncoding,
+                            headers: headers)
     }
 
     func delete(endpoint: String, params: [String: Any], headers: [String: String]) -> Task<Any> {
-        return self.request(endpoint, method: .delete, parameters: params, encoding: defaultEncoding, headers: headers)
+        return self.request(urlPath + endpoint,
+                            method: .delete,
+                            parameters: params,
+                            encoding: defaultEncoding,
+                            headers: headers)
     }
 }
