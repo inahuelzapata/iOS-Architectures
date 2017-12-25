@@ -1,0 +1,14 @@
+disabled_rules:
+ - todo
+ - identifier_name
+ - generic_type_name
+ - type_name
+ - cyclomatic_complexity
+ - class_delegate_protocol
+ - closure_parameter_position
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
