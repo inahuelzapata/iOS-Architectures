@@ -24,7 +24,7 @@ class RequestManager: Requestable, HttpRequestHandler {
     private var defaultEncoding: Encoding!
 
     private init() {
-        urlPath = "https://google.com"
+        urlPath = "https://jsonplaceholder.typicode.com"
         defaultEncoding = Encoding.default
     }
 
