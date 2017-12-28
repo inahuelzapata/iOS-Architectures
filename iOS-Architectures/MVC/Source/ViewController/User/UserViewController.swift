@@ -12,7 +12,7 @@ import UIKit
 class UserViewController: UIViewController {
     var users: [User] = []
     let kCellIdentifier = "UserTableViewCellIdentifier"
-
+    let kSegueIdentifier = "goToUserDetailView"
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -39,6 +39,16 @@ class UserViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 2.0
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let userDetailController = segue.destination as? UserDetailViewController {
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                fatalError()
+            }
+            
+            userDetailController.user = users[indexPath.row]
+        }
+    }
 }
 
 extension UserViewController: UITableViewDataSource {
@@ -54,5 +64,11 @@ extension UserViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
+    }
+}
+
+extension UserViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: kSegueIdentifier, sender: self)
     }
 }
