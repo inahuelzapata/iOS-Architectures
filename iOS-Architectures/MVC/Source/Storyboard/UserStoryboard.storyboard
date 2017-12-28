@@ -184,6 +184,9 @@
                                         <state key="normal" title="Show on Map">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showMapView:" destination="lP6-fK-2Pf" eventType="touchUpInside" id="mQJ-rl-6iP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -334,11 +337,44 @@
                         <outlet property="streetLabel" destination="eWs-Kz-zMM" id="bH9-hs-Bou"/>
                         <outlet property="usernameLabel" destination="6Yf-Nl-XEC" id="raN-jh-LJy"/>
                         <outlet property="websiteLabel" destination="RdW-w6-iBJ" id="F30-e0-cNo"/>
+                        <segue destination="eMh-HB-RRd" kind="show" identifier="showMapViewController" id="Vg0-sw-6Y3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceL-7y-TKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1445.5999999999999" y="-10.344827586206897"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="TbQ-45-0zv">
+            <objects>
+                <viewController id="eMh-HB-RRd" customClass="MapViewController" customModule="iOS_Architectures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UF9-Ve-gmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bTO-my-Jzf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eMh-HB-RRd" id="Tna-Db-gba"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bTO-my-Jzf" firstAttribute="top" secondItem="qhf-RN-pey" secondAttribute="top" id="6Vm-pc-K6I"/>
+                            <constraint firstItem="qhf-RN-pey" firstAttribute="bottom" secondItem="bTO-my-Jzf" secondAttribute="bottom" id="rIu-M1-8wU"/>
+                            <constraint firstItem="bTO-my-Jzf" firstAttribute="leading" secondItem="qhf-RN-pey" secondAttribute="leading" id="rXq-NG-RtY"/>
+                            <constraint firstItem="qhf-RN-pey" firstAttribute="trailing" secondItem="bTO-my-Jzf" secondAttribute="trailing" id="rqh-5a-yCZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qhf-RN-pey"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="bTO-my-Jzf" id="yhE-Lb-1dl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETi-iN-MNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287" y="-10"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kEf-lj-45n">

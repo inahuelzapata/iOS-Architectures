@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class UserDetailViewController: UIViewController {
+    let kSegueIdentifier = "showMapViewController"
+    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var phoneLabel: UILabel!
@@ -30,6 +32,10 @@ class UserDetailViewController: UIViewController {
         loadUserInfo()
     }
 
+    @IBAction func showMapView(_ sender: Any) {
+        self.performSegue(withIdentifier: kSegueIdentifier, sender: self)
+    }
+
     func loadUserInfo() {
         nameLabel.text = user.name
         usernameLabel.text = user.username
@@ -42,5 +48,11 @@ class UserDetailViewController: UIViewController {
 
         companyNameLabel.text = user.company.name
         catchPhraseLabel.text = user.company.catchPhrase
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let mapController = segue.destination as? MapViewController {
+            mapController.geoposition = self.user.address.geo
+        }
     }
 }

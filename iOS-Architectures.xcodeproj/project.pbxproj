@@ -29,6 +29,7 @@
 		4D0987341FF2743E00F6E9F6 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0987321FF2743E00F6E9F6 /* UserTableViewCell.xib */; };
 		4DBEF5DE1FF327F0006B569C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEF5DD1FF327F0006B569C /* InitialViewController.swift */; };
 		4DBEF5E11FF32BA7006B569C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEF5E01FF32BA7006B569C /* UserDetailViewController.swift */; };
+		4DDD7F8F1FF53EC9009CD9A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD7F8E1FF53EC9009CD9A7 /* MapViewController.swift */; };
 		6BB4F3994FF9AE967E2291D7 /* Pods_iOS_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E18B70EEE3AB25C2A26A8DA /* Pods_iOS_ArchitecturesTests.framework */; };
 		BEF599BF68270E664D8FD936 /* Pods_iOS_Architectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C27115AA10AA1242A88FF86 /* Pods_iOS_Architectures.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		4D0987321FF2743E00F6E9F6 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		4DBEF5DD1FF327F0006B569C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4DBEF5E01FF32BA7006B569C /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		4DDD7F8E1FF53EC9009CD9A7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6C27115AA10AA1242A88FF86 /* Pods_iOS_Architectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Architectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA1008EE0CF15D66F1C2E7B /* Pods-iOS-ArchitecturesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ArchitecturesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ArchitecturesUITests/Pods-iOS-ArchitecturesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0FA14D6B84F97BE810163F6 /* Pods-iOS-Architectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Architectures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Architectures/Pods-iOS-Architectures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		01FD396D1FF1C722001493B8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4DDD7F8D1FF53EB0009CD9A7 /* MapView */,
 				01FD39741FF1C7AD001493B8 /* User */,
 				4DBEF5DF1FF32B87006B569C /* UserDetail */,
 			);
@@ -342,6 +345,14 @@
 				4DBEF5E01FF32BA7006B569C /* UserDetailViewController.swift */,
 			);
 			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		4DDD7F8D1FF53EB0009CD9A7 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD7F8E1FF53EC9009CD9A7 /* MapViewController.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		5983777E4BBAE057BB7DDA7E /* Frameworks */ = {
@@ -696,6 +707,7 @@
 				0134C2AB1FF1A2E50069F062 /* ResponseHandler.swift in Sources */,
 				0134C2A21FF1A27A0069F062 /* RequestManager.swift in Sources */,
 				01FD397B1FF1C836001493B8 /* User.swift in Sources */,
+				4DDD7F8F1FF53EC9009CD9A7 /* MapViewController.swift in Sources */,
 				0134C2A41FF1A28B0069F062 /* BaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

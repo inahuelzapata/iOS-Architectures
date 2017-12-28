@@ -39,13 +39,13 @@ class UserViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 2.0
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let userDetailController = segue.destination as? UserDetailViewController {
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 fatalError()
             }
-            
+
             userDetailController.user = users[indexPath.row]
         }
     }
