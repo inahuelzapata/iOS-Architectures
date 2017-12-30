@@ -20,6 +20,8 @@
 		0134C2A91FF1A2C50069F062 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2A81FF1A2C50069F062 /* Requestable.swift */; };
 		0134C2AB1FF1A2E50069F062 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2AA1FF1A2E50069F062 /* ResponseHandler.swift */; };
 		0134C2AE1FF1A4D70069F062 /* HttpRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2AD1FF1A4D70069F062 /* HttpRequestHandler.swift */; };
+		01DB8FE91FF82BA70067B1A2 /* JSONEncoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */; };
+		01DB8FEB1FF82BC50067B1A2 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */; };
 		01FD39761FF1C7E1001493B8 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD39751FF1C7E1001493B8 /* UserViewController.swift */; };
 		01FD39781FF1C818001493B8 /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FD39771FF1C818001493B8 /* UserStoryboard.storyboard */; };
 		01FD397B1FF1C836001493B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD397A1FF1C836001493B8 /* User.swift */; };
@@ -66,6 +68,8 @@
 		0134C2A81FF1A2C50069F062 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		0134C2AA1FF1A2E50069F062 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		0134C2AD1FF1A4D70069F062 /* HttpRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHandler.swift; sourceTree = "<group>"; };
+		01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Extension.swift"; sourceTree = "<group>"; };
+		01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		01FD39751FF1C7E1001493B8 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		01FD39771FF1C818001493B8 /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		01FD397A1FF1C836001493B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 		0134C29C1FF1A14D0069F062 /* Cross */ = {
 			isa = PBXGroup;
 			children = (
+				01DB8FE61FF82B7A0067B1A2 /* Extension */,
 				0134C29E1FF1A2460069F062 /* RequestManager */,
 				0134C29D1FF1A1620069F062 /* Error */,
 			);
@@ -239,6 +244,23 @@
 				0134C2AD1FF1A4D70069F062 /* HttpRequestHandler.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		01DB8FE61FF82B7A0067B1A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01DB8FE71FF82B8A0067B1A2 /* JSON */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		01DB8FE71FF82B8A0067B1A2 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */,
+				01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		01FD396C1FF1C71A001493B8 /* Source */ = {
@@ -654,6 +676,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DB8FE91FF82BA70067B1A2 /* JSONEncoder+Extension.swift in Sources */,
 				0134C2A61FF1A2A70069F062 /* HttpRequestError.swift in Sources */,
 				01FD39761FF1C7E1001493B8 /* UserViewController.swift in Sources */,
 				0134C2A91FF1A2C50069F062 /* Requestable.swift in Sources */,
@@ -663,6 +686,7 @@
 				01FD397E1FF1CB50001493B8 /* UserRequestManager.swift in Sources */,
 				0134C2AB1FF1A2E50069F062 /* ResponseHandler.swift in Sources */,
 				0134C2A21FF1A27A0069F062 /* RequestManager.swift in Sources */,
+				01DB8FEB1FF82BC50067B1A2 /* JSONDecoder+Extension.swift in Sources */,
 				01FD397B1FF1C836001493B8 /* User.swift in Sources */,
 				0134C2A41FF1A28B0069F062 /* BaseError.swift in Sources */,
 			);
