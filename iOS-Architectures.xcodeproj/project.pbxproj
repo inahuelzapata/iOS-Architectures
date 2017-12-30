@@ -20,13 +20,18 @@
 		0134C2A91FF1A2C50069F062 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2A81FF1A2C50069F062 /* Requestable.swift */; };
 		0134C2AB1FF1A2E50069F062 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2AA1FF1A2E50069F062 /* ResponseHandler.swift */; };
 		0134C2AE1FF1A4D70069F062 /* HttpRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134C2AD1FF1A4D70069F062 /* HttpRequestHandler.swift */; };
-		01DB8FE91FF82BA70067B1A2 /* JSONEncoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */; };
-		01DB8FEB1FF82BC50067B1A2 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */; };
-		01FD39761FF1C7E1001493B8 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD39751FF1C7E1001493B8 /* UserViewController.swift */; };
+		01DB8FF01FF82CB80067B1A2 /* JSONEncoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FEE1FF82CB70067B1A2 /* JSONEncoder+Extension.swift */; };
+		01DB8FF11FF82CB80067B1A2 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB8FEF1FF82CB70067B1A2 /* JSONDecoder+Extension.swift */; };
+		01FD39761FF1C7E1001493B8 /* MVCUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD39751FF1C7E1001493B8 /* MVCUserViewController.swift */; };
 		01FD39781FF1C818001493B8 /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FD39771FF1C818001493B8 /* UserStoryboard.storyboard */; };
 		01FD397B1FF1C836001493B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD397A1FF1C836001493B8 /* User.swift */; };
 		01FD397E1FF1CB50001493B8 /* UserRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD397D1FF1CB50001493B8 /* UserRequestManager.swift */; };
 		1F8B50E78DE067F1FFE5CECC /* Pods_iOS_ArchitecturesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155487263B72FFA4333FDED2 /* Pods_iOS_ArchitecturesUITests.framework */; };
+		4D0987331FF2743E00F6E9F6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0987311FF2743E00F6E9F6 /* UserTableViewCell.swift */; };
+		4D0987341FF2743E00F6E9F6 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0987321FF2743E00F6E9F6 /* UserTableViewCell.xib */; };
+		4DBEF5DE1FF327F0006B569C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEF5DD1FF327F0006B569C /* InitialViewController.swift */; };
+		4DBEF5E11FF32BA7006B569C /* MVCUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEF5E01FF32BA7006B569C /* MVCUserDetailViewController.swift */; };
+		4DDD7F8F1FF53EC9009CD9A7 /* MVCMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD7F8E1FF53EC9009CD9A7 /* MVCMapViewController.swift */; };
 		6BB4F3994FF9AE967E2291D7 /* Pods_iOS_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E18B70EEE3AB25C2A26A8DA /* Pods_iOS_ArchitecturesTests.framework */; };
 		BEF599BF68270E664D8FD936 /* Pods_iOS_Architectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C27115AA10AA1242A88FF86 /* Pods_iOS_Architectures.framework */; };
 /* End PBXBuildFile section */
@@ -68,9 +73,9 @@
 		0134C2A81FF1A2C50069F062 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		0134C2AA1FF1A2E50069F062 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		0134C2AD1FF1A4D70069F062 /* HttpRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHandler.swift; sourceTree = "<group>"; };
-		01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Extension.swift"; sourceTree = "<group>"; };
-		01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
-		01FD39751FF1C7E1001493B8 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		01DB8FEE1FF82CB70067B1A2 /* JSONEncoder+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Extension.swift"; sourceTree = "<group>"; };
+		01DB8FEF1FF82CB70067B1A2 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		01FD39751FF1C7E1001493B8 /* MVCUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCUserViewController.swift; sourceTree = "<group>"; };
 		01FD39771FF1C818001493B8 /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		01FD397A1FF1C836001493B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		01FD397D1FF1CB50001493B8 /* UserRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestManager.swift; sourceTree = "<group>"; };
@@ -79,6 +84,11 @@
 		236B904053FA1FEFE0B9E110 /* Pods-iOS-ArchitecturesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ArchitecturesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ArchitecturesTests/Pods-iOS-ArchitecturesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4793D6A0B7217B79056995DD /* Pods-iOS-ArchitecturesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ArchitecturesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ArchitecturesUITests/Pods-iOS-ArchitecturesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B46F61CB670D24DAD1F74D7 /* Pods-iOS-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ArchitecturesTests/Pods-iOS-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D0987311FF2743E00F6E9F6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		4D0987321FF2743E00F6E9F6 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		4DBEF5DD1FF327F0006B569C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		4DBEF5E01FF32BA7006B569C /* MVCUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCUserDetailViewController.swift; sourceTree = "<group>"; };
+		4DDD7F8E1FF53EC9009CD9A7 /* MVCMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCMapViewController.swift; sourceTree = "<group>"; };
 		6C27115AA10AA1242A88FF86 /* Pods_iOS_Architectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Architectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA1008EE0CF15D66F1C2E7B /* Pods-iOS-ArchitecturesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ArchitecturesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ArchitecturesUITests/Pods-iOS-ArchitecturesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0FA14D6B84F97BE810163F6 /* Pods-iOS-Architectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Architectures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Architectures/Pods-iOS-Architectures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,9 +221,10 @@
 		0134C29C1FF1A14D0069F062 /* Cross */ = {
 			isa = PBXGroup;
 			children = (
-				01DB8FE61FF82B7A0067B1A2 /* Extension */,
+				01DB8FEC1FF82CB70067B1A2 /* Extension */,
 				0134C29E1FF1A2460069F062 /* RequestManager */,
 				0134C29D1FF1A1620069F062 /* Error */,
+				4DBEF5DD1FF327F0006B569C /* InitialViewController.swift */,
 			);
 			path = Cross;
 			sourceTree = "<group>";
@@ -246,19 +257,19 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		01DB8FE61FF82B7A0067B1A2 /* Extension */ = {
+		01DB8FEC1FF82CB70067B1A2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				01DB8FE71FF82B8A0067B1A2 /* JSON */,
+				01DB8FED1FF82CB70067B1A2 /* JSON */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		01DB8FE71FF82B8A0067B1A2 /* JSON */ = {
+		01DB8FED1FF82CB70067B1A2 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				01DB8FE81FF82BA70067B1A2 /* JSONEncoder+Extension.swift */,
-				01DB8FEA1FF82BC50067B1A2 /* JSONDecoder+Extension.swift */,
+				01DB8FEE1FF82CB70067B1A2 /* JSONEncoder+Extension.swift */,
+				01DB8FEF1FF82CB70067B1A2 /* JSONDecoder+Extension.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -278,7 +289,9 @@
 		01FD396D1FF1C722001493B8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4DDD7F8D1FF53EB0009CD9A7 /* MapView */,
 				01FD39741FF1C7AD001493B8 /* User */,
+				4DBEF5DF1FF32B87006B569C /* UserDetail */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,6 +299,7 @@
 		01FD396E1FF1C729001493B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D0987301FF2741F00F6E9F6 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,7 +331,7 @@
 		01FD39741FF1C7AD001493B8 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				01FD39751FF1C7E1001493B8 /* UserViewController.swift */,
+				01FD39751FF1C7E1001493B8 /* MVCUserViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -336,6 +350,31 @@
 				01FD397D1FF1CB50001493B8 /* UserRequestManager.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		4D0987301FF2741F00F6E9F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D0987311FF2743E00F6E9F6 /* UserTableViewCell.swift */,
+				4D0987321FF2743E00F6E9F6 /* UserTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4DBEF5DF1FF32B87006B569C /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4DBEF5E01FF32BA7006B569C /* MVCUserDetailViewController.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		4DDD7F8D1FF53EB0009CD9A7 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD7F8E1FF53EC9009CD9A7 /* MVCMapViewController.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		5983777E4BBAE057BB7DDA7E /* Frameworks */ = {
@@ -482,6 +521,7 @@
 				0134C2741FF1A05A0069F062 /* LaunchScreen.storyboard in Resources */,
 				0134C2711FF1A05A0069F062 /* Assets.xcassets in Resources */,
 				0134C26C1FF1A05A0069F062 /* Main.storyboard in Resources */,
+				4D0987341FF2743E00F6E9F6 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,18 +716,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DB8FE91FF82BA70067B1A2 /* JSONEncoder+Extension.swift in Sources */,
+				4DBEF5E11FF32BA7006B569C /* MVCUserDetailViewController.swift in Sources */,
 				0134C2A61FF1A2A70069F062 /* HttpRequestError.swift in Sources */,
-				01FD39761FF1C7E1001493B8 /* UserViewController.swift in Sources */,
+				4DBEF5DE1FF327F0006B569C /* InitialViewController.swift in Sources */,
+				01FD39761FF1C7E1001493B8 /* MVCUserViewController.swift in Sources */,
 				0134C2A91FF1A2C50069F062 /* Requestable.swift in Sources */,
 				0134C26F1FF1A05A0069F062 /* iOS_Architectures.xcdatamodeld in Sources */,
+				4D0987331FF2743E00F6E9F6 /* UserTableViewCell.swift in Sources */,
 				0134C2671FF1A0590069F062 /* AppDelegate.swift in Sources */,
+				01DB8FF01FF82CB80067B1A2 /* JSONEncoder+Extension.swift in Sources */,
 				0134C2AE1FF1A4D70069F062 /* HttpRequestHandler.swift in Sources */,
+				01DB8FF11FF82CB80067B1A2 /* JSONDecoder+Extension.swift in Sources */,
 				01FD397E1FF1CB50001493B8 /* UserRequestManager.swift in Sources */,
 				0134C2AB1FF1A2E50069F062 /* ResponseHandler.swift in Sources */,
 				0134C2A21FF1A27A0069F062 /* RequestManager.swift in Sources */,
-				01DB8FEB1FF82BC50067B1A2 /* JSONDecoder+Extension.swift in Sources */,
 				01FD397B1FF1C836001493B8 /* User.swift in Sources */,
+				4DDD7F8F1FF53EC9009CD9A7 /* MVCMapViewController.swift in Sources */,
 				0134C2A41FF1A28B0069F062 /* BaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

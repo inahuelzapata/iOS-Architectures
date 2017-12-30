@@ -29,8 +29,8 @@ class Address: Codable {
 }
 
 class Location: Codable {
-    var latitude: Double!
-    var longitude: Double!
+    var lat: String!
+    var lng: String!
 }
 
 class Company: Codable {
